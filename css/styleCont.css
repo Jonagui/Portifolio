@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: aqua;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
+    margin: 0; /* Remove margens padrão */
+}
+.container {
+    background-color: #1c1c1c; /* Fundo do formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Largura do formulário */
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+label {
+    display: block; /* Faz os labels ocuparem toda a largura */
+    margin: 10px 0 5px; /* Espaçamento em torno dos labels */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px;
+    border: 1px solid aqua; /* Borda do input */
+    background-color: #2c2c2c; /* Fundo do input */
+    color: white; /* Cor do texto do input */
+}
+textarea {
+    resize: none; /* Desativa o redimensionamento do textarea */
+    height: 100px; /* Altura do textarea */
+}
+button {
+    background-color: aqua; /* Cor do botão */
+    color: black; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+button:hover {
+    background-color: #03c0fa; /* Cor do botão ao passar o mouse */
+}

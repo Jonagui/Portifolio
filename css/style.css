@@ -1,0 +1,320 @@
+body{
+    background-color: black;
+    color: aqua;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.navbar{
+    background-color: rgb(0, 255, 255);
+    color: black;
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    display: grid;               /* Ativa o Grid Layout */
+    align-content: center;
+    grid-template-columns: 1fr 2fr; /* Cria três colunas */
+    align-items: center;         /* Alinha verticalmente ao centro */
+    padding: 20px 20px;          /* Espaçamento interno 
+    border: 1px solid aqua;*/
+}
+
+.nav1{
+    text-align: left;
+    margin-left: 10%;
+    color: black;
+  
+}
+
+
+.nav2{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.nav3{
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;  /*Remove o sublinhado padrão */ 
+    transition: text-decoration 0.3s ease; /* Animação suave*/ 
+    margin-right: 20px;
+    color: aqua;
+    font-size: larger;
+}
+
+
+.button:hover {
+    text-decoration: underline;  /*Adiciona o sublinhado ao passar o cursor*/ 
+}
+
+
+
+.header{
+    color: white;           /* Cor do texto */
+    text-align: center;     /* Centraliza o texto */
+    padding: 10px 0;        /* Espaçamento interno */
+    position: top;        /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;              /* Posiciona o rodapé no fundo da página */
+    width: 100%;            /* Ocupa toda a largura da tela */
+    
+}
+
+.seccao1 {
+    display: flex; /* Ativa Flexbox para layout */
+    justify-content: center; /* Centraliza os blocos horizontalmente */
+    align-items: center; /* Centraliza os blocos verticalmente */
+    gap: 0px; /* Espaçamento entre os blocos */
+    /*border: 1px solid aqua;*/
+    padding: 20px; /* Espaçamento interno */
+    
+}
+
+/* Estilo do bloco de texto */
+.texto {
+    width: 400px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    /*background-color: #fff;  Cor de fundo do bloco de texto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    /*border: 1px solid aqua;*/
+    display: flexbox;
+    flex-direction: column;  /* Alinha o conteúdo do texto verticalmente */    
+    justify-content: center; /* Centraliza o texto verticalmente */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o bloco */
+}
+
+/* Estilo do link "Entre em contato" */
+.texto .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;    
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.containertxt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.txt{
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imgPerfil{
+    border-radius: 10%;
+
+}
+/* Estilo do bloco de imagem */
+.img-perfil {
+    width: 400px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    /*border: 1px solid aqua;*/
+    display: flexbox;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+/* Estilo da imagem dentro do bloco de imagem */
+.img-perfil img {
+   width: 100%;
+   height: 100%;
+   border-radius: 10%;
+}
+
+
+.seccao2{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    /*border: 1px solid aqua;*/
+    width: 100%;
+}
+
+.container{
+    display: flexbox;
+    /*border: 1px solid aqua;*/
+
+}
+
+.item1{
+    text-align: center;
+
+}
+
+.item1img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.item2{
+    text-align: center;
+
+}
+
+.item2img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.item3{
+    text-align: center;
+
+}
+
+.item3img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+footer{
+    background-color: aqua;
+    color: black;           /* Cor do texto */
+    text-align: center;     /* Centraliza o texto */
+    padding: 10px 0;        /* Espaçamento interno */
+    border-radius: 10px;
+    /*position: fixed;         Fixa o rodapé na parte inferior da página */
+    /* bottom: 0;              Posiciona o rodapé no fundo da página */
+    width: 100%;
+    height: auto;
+    
+    /*z-index: 1000;           Garante que o rodapé fique acima de outros elementos */
+    
+}
+
+footer p{
+    margin: 0;              /* Remove margens padrão */
+    font-size: 16px;        /* Tamanho da fonte */
+}
+
+
+.seccao2 .container img {
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.seccao2 .container img:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+    z-index: 10; /* Traz a imagem para frente */
+}
+
+
+.cookie-banner {
+    display: none; /* Inicialmente oculto, será exibido apenas se o cookie não estiver definido */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    color: aqua;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-banner button {
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cookie-banner button:hover {
+    background-color: #45a049;
+}
+
+
+/*------------------------------------------------*/
+
+@media (max-width: 440px) {
+    
+   
+    body {           
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+    
+    .navbar {          
+            grid-template-columns: 1fr; /* Coloca os itens em uma única coluna */
+            text-align: center;  
+            padding: 10px;
+            height: auto; /* Ajusta a altura do navbar */
+        }
+
+    .nav1, .nav2, .nav3 {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            padding: 5px;
+        }
+
+       
+    .seccao1, .seccao2 {
+            display: block; /* Ajusta a disposição para uma única coluna */          
+            padding: 10px;
+        }
+
+    .seccao2 {           
+            grid-template-columns: 1fr; /* Exibe as imagens uma abaixo da outra */
+            text-align: center;
+    }    
+
+    .item1img, .item2img, .item3img {      
+            width: 150px;
+            height: 150px;
+        }
+
+    .imgPerfil{
+        width: 200px;
+        height: auto;
+    }
+
+    .img-perfil {           
+            width: 100%;
+            height: auto;
+        }
+
+    .texto {
+            width: auto;
+            height: auto;
+            padding: 10px;
+        }
+
+    .containertxt {
+            grid-template-columns: 1fr;      
+            margin-left: 0;
+        }
+    
+    .txt {
+            margin-left: 0;
+            padding: 10px;
+        }
+   
+    footer{      
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
+
+
+    /*-------------------------------------------------*/
+
+    
